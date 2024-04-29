@@ -31,6 +31,7 @@ function startTimer() {
     timeLeft--;
     updateTimer();
     if (timeLeft === 0) {
+      alert('Time is UP!! Take some rest. Good work.');
       clearInterval(interval);
       timeLeft = 1500;
     }
@@ -41,4 +42,8 @@ function stopTimer() {
   clearInterval(interval);
 }
 
-function resetTimer() {}
+function resetTimer() {
+  clearInterval(interval);
+  timeLeft = 1500;
+  updateTimer();
+}
