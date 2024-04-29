@@ -38,9 +38,7 @@ function startTimer() {
 }
 
 function stopTimer() {
-  alert('stop');
+  clearInterval(interval);
 }
 
-function resetTimer() {
-  alert('reset');
-}
+function resetTimer() {}
